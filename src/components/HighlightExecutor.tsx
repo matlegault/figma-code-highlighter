@@ -26,7 +26,7 @@ const HighlightExecutor: React.FC<Props> = ({
     <div className="box">
       <div className="flex">
         <div className="flexChild">
-          <div className="section-title">Color Schema</div>
+          <div className="section-title">Theme</div>
           <Select
             current={schemaAndLanguage.colorSchema}
             collection={colorSchemaList}

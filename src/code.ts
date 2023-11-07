@@ -60,6 +60,7 @@ figma.ui.onmessage = msg => {
         })
     } catch (e) {
       figma.notify(`😭 ${e}`)
+      console.log(`😭 ${e}`)
     }
   }
 

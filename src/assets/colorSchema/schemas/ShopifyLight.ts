@@ -1,15 +1,15 @@
-const colorSyntaxDefault = { type: 'SOLID', color: { r: 163/255, g: 223/255, b: 253/255 } };
-const colorSyntaxComment = { type: 'SOLID', color: { r: 215/255, g: 215/255, b: 219/255 } };
-const colorSyntaxKeyword = { type: 'SOLID', color: { r: 122/255, g: 167/255, b: 255/255 } };
-const colorSyntaxNumber = { type: 'SOLID', color: { r: 99/255, g: 244/255, b: 76/255 } };
-const colorSyntaxLiquidObject = { type: 'SOLID', color: { r: 0/255, g: 244/255, b: 185/255 } };
-const colorSyntaxString = { type: 'SOLID', color: { r: 254/255, g: 159/255, b: 155/255 } };
-const colorSyntaxDelete = { type: 'SOLID', color: { r: 254/255, g: 159/255, b: 155/255 } };
-const colorSyntaxFunction = { type: 'SOLID', color: { r: 243/255, g: 249/255, b: 115/255 } };
-const colorSyntaxAdd = { type: 'SOLID', color: { r: 180/255, g: 177/255, b: 255/255 } };
-const colorSyntaxPunctuation = { type: 'SOLID', color: { r: 238/255, g: 241/255, b: 241/255 } };
-const colorSyntaxBoolean = { type: 'SOLID', color: { r: 180/255, g: 177/255, b: 255/255 } };
-const colorSyntaxProperty = { type: 'SOLID', color: { r: 124/255, g: 212/255, b: 251/255 } };
+const colorSyntaxDefault = { type: 'SOLID', color: { r: 27/255, g: 103/255, b: 128/255 } };
+const colorSyntaxComment = { type: 'SOLID', color: { r: 75/255, g: 100/255, b: 104/255 } };
+const colorSyntaxKeyword = { type: 'SOLID', color: { r: 0/255, g: 95/255, b: 184/255 } };
+const colorSyntaxNumber = { type: 'SOLID', color: { r: 40/255, g: 109/255, b: 29/255 } };
+const colorSyntaxLiquidObject = { type: 'SOLID', color: { r: 0/255, g: 109/255, b: 81/255 } };
+const colorSyntaxString = { type: 'SOLID', color: { r: 154/255, g: 70/255, b: 66/255 } };
+const colorSyntaxDelete = { type: 'SOLID', color: { r: 205/255, g: 53/255, b: 91/255 } };
+const colorSyntaxFunction = { type: 'SOLID', color: { r: 125/255, g: 89/255, b: 0/255 } };
+const colorSyntaxAdd = { type: 'SOLID', color: { r: 96/255, g: 85/255, b: 255/255 } };
+const colorSyntaxPunctuation = { type: 'SOLID', color: { r: 86/255, g: 71/255, b: 74/255 } };
+const colorSyntaxBoolean = { type: 'SOLID', color: { r: 75/255, g: 61/255, b: 247/255 } };
+const colorSyntaxProperty = { type: 'SOLID', color: { r: 27/255, g: 103/255, b: 128/255 } };
 
 const ShopifyLight = {
   'hljs': colorSyntaxDefault,

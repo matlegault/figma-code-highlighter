@@ -12,7 +12,7 @@ const colorSyntaxBoolean = { type: 'SOLID', color: { r: 75/255, g: 61/255, b: 24
 const colorSyntaxProperty = { type: 'SOLID', color: { r: 27/255, g: 103/255, b: 128/255 } };
 
 const ShopifyLight = {
-  'hljs': colorSyntaxDefault,
+  hljs: colorSyntaxDefault,
   'hljs-comment': colorSyntaxComment,
   'hljs-quote': colorSyntaxComment,
   'hljs-keyword': colorSyntaxKeyword,

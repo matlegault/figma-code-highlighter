@@ -95,7 +95,7 @@ import zenburn from './schemas/zenburn'
 
 export {
   ShopifyDark,
-  ShopifyLight
+  ShopifyLight,
   // a11yDark,
   // a11yLight,
   // agate,

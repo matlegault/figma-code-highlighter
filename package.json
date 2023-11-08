@@ -10,9 +10,10 @@
   ],
   "main": "code.js",
   "scripts": {
+    "build": "webpack --mode=production",
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "webpack --mode=development --watch",
-    "prettier-w": "prettier --write ./{src,__tests__,pages}/**/*.{ts,tsx}"
+    "prettier": "prettier --write ./{src,__tests__,pages}/**/*.{ts,tsx}"
   },
   "author": {
     "name": "ixtgorilla",
@@ -23,11 +24,13 @@
     "node": "^20"
   },
   "devDependencies": {
+    "@effortlessmotion/html-webpack-inline-source-plugin": "1.0.3",
     "@types/highlight.js": "^9.12.3",
+    "@types/humps": "^1.1.2",
+    "@types/node": "^12.7.12",
     "@types/react": "^16.9.6",
     "@types/react-dom": "^16.9.2",
     "css-loader": "6.8.1",
-    "@effortlessmotion/html-webpack-inline-source-plugin": "1.0.3",
     "html-webpack-plugin": "5.5.3",
     "style-loader": "3.3.3",
     "ts-loader": "9.5.0",
@@ -37,8 +40,6 @@
     "webpack-cli": "5.1.4"
   },
   "dependencies": {
-    "@types/humps": "^1.1.2",
-    "@types/node": "^12.7.12",
     "highlight.js": "^9.15.10",
     "humps": "^2.0.1",
     "prettier": "^1.18.2",

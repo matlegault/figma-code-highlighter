@@ -1,4 +1,4 @@
-import { highlightAuto } from 'highlight.js'
+import hljs from 'highlight.js'
 import * as colorSchema from '../assets/colorSchema/index'
 import { SchemaAndLanguage } from '../models/SchemaAndLanguage'
 
@@ -41,7 +41,7 @@ const changeColorUsecase = (
     if (item.type == 'TEXT') {
       let itm: TextNode = item
 
-      const result = highlightAuto(itm.characters, [schemaAndLanguage.language])
+      const result = hljs.highlight(itm.characters, { language: schemaAndLanguage.language })
       const str: string = `<div>${result.value}</div>`
       const doc = new dom().parseFromString(str)
 

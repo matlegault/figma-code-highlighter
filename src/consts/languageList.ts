@@ -1,5 +1,6 @@
 const languageList = [
   'curl',
+  'graphql',
   'html',
   'javascript',
   'json',

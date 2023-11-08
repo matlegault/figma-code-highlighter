@@ -1,7 +1,7 @@
 {
   "name": "figma-code-highlighter",
   "version": "1.0.0",
-  "description": "Code highlighter for Figma. This plugin supports about 200 languages and about 100 color schemas.",
+  "description": "Code highlighter for Figma. This plugin supports about 200 languages and about 100 color schemas. It has been modified to work specifically for Shopify.dev",
   "keywords": [
     "highlight",
     "syntax",
@@ -16,16 +16,15 @@
     "prettier": "prettier --write ./{src,__tests__,pages}/**/*.{ts,tsx}"
   },
   "author": {
-    "name": "ixtgorilla",
-    "email": "ixtgorilla@gmail.com"
+    "name": "ixtgorilla + Mathieu Legault",
+    "email": "mathieu.legault@shopify.com"
   },
   "license": "BSD-3-Clause",
   "engines": {
     "node": "^20"
   },
   "devDependencies": {
-    "@effortlessmotion/html-webpack-inline-source-plugin": "1.0.3",
-    "@types/highlight.js": "^9.12.3",
+    "html-inline-script-webpack-plugin": "^3.1.0",
     "@types/humps": "^1.1.2",
     "@types/node": "^12.7.12",
     "@types/react": "^16.9.6",
@@ -40,7 +39,7 @@
     "webpack-cli": "5.1.4"
   },
   "dependencies": {
-    "highlight.js": "^9.15.10",
+    "highlight.js": "11.9.0",
     "humps": "^2.0.1",
     "prettier": "^1.18.2",
     "react": "^16.10.2",

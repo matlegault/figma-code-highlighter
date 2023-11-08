@@ -1,4 +1,4 @@
-const HtmlWebpackInlineSourcePlugin = require("@effortlessmotion/html-webpack-inline-source-plugin");
+const HtmlInlineScriptPlugin = require('html-inline-script-webpack-plugin');
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
 
@@ -35,6 +35,6 @@ module.exports = (env, argv) => ({
       chunks: ["ui"],
       inject: "body"
     }),
-    new HtmlWebpackInlineSourcePlugin()
+    new HtmlInlineScriptPlugin()
   ]
 });

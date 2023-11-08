@@ -1,4 +1,4 @@
-const HtmlWebpackInlineSourcePlugin = require("html-webpack-inline-source-plugin");
+const HtmlWebpackInlineSourcePlugin = require("@effortlessmotion/html-webpack-inline-source-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
 
@@ -15,11 +15,8 @@ module.exports = (env, argv) => ({
   module: {
     rules: [
       { test: /\.tsx?$/, use: "ts-loader", exclude: /node_modules/ },
-      {
-        test: /\.css$/,
-        loader: [{ loader: "style-loader" }, { loader: "css-loader" }]
-      },
-      { test: /\.(png|jpg|gif|webp|svg)$/, loader: [{ loader: "url-loader" }] }
+      { test: /\.css$/, use: ["style-loader", "css-loader"] },
+      { test: /\.(png|jpg|gif|webp|svg)$/, use: "url-loader" }
     ]
   },
 
@@ -35,7 +32,8 @@ module.exports = (env, argv) => ({
       template: "./src/ui.html",
       filename: "ui.html",
       inlineSource: ".(js)$",
-      chunks: ["ui"]
+      chunks: ["ui"],
+      inject: "body"
     }),
     new HtmlWebpackInlineSourcePlugin()
   ]

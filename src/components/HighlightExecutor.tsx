@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { SchemaAndLanguage } from '../models/SchemaAndLanguage'
-import colorSchemaList from '../consts/colorSchemalist'
-import languageList from '../consts/languagelist'
+import colorSchemaList from '../consts/colorSchemaList'
+import languageList from '../consts/languageList'
 import Select from './Select'
 
 interface Props {

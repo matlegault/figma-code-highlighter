@@ -4,6 +4,7 @@ const languageList = [
   'html',
   'javascript',
   'json',
+  'liquid',
   'php',
   'python',
   'ruby',

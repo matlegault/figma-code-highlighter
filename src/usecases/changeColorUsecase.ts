@@ -1,9 +1,14 @@
 import hljs from 'highlight.js'
 import * as colorSchema from '../assets/colorSchema/index'
 import { SchemaAndLanguage } from '../models/SchemaAndLanguage'
+import liquid from '../assets/liquid.js'; // import liquid
+
 
 const xpath = require('xpath')
 const dom = require('xmldom').DOMParser
+
+hljs.registerLanguage('liquid', liquid); // register liquid
+
 
 declare function require(path: string): any
 
@@ -41,6 +46,7 @@ const changeColorUsecase = (
     if (item.type == 'TEXT') {
       let itm: TextNode = item
 
+      
       const result = hljs.highlight(itm.characters, { language: schemaAndLanguage.language })
       const str: string = `<div>${result.value}</div>`
       const doc = new dom().parseFromString(str)

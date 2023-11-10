@@ -28,7 +28,7 @@ const ShopifyDark = {
   'hljs-type': colorSyntaxString,
   'hljs-params': colorSyntaxString,
   'hljs-title': colorSyntaxString,
-  'hljs-tag': colorSyntaxString,
+  'hljs-tag': colorSyntaxDefault,
   'hljs-name': colorSyntaxString,
   'hljs-attribute': colorSyntaxString,
   'hljs-symbol': colorSyntaxNumber,
@@ -64,5 +64,6 @@ const ShopifyDark = {
   'hljs-string .hljs-attr': colorSyntaxDefault,
   'hljs-string .hljs-punctuation': colorSyntaxDefault,
   'hljs-literal .hljs-punctuation': colorSyntaxDefault,
+  'hljs-liquidobject': colorSyntaxLiquidObject,
 };
 export default ShopifyDark

@@ -24,12 +24,12 @@
     "node": "^20"
   },
   "devDependencies": {
-    "html-inline-script-webpack-plugin": "^3.1.0",
     "@types/humps": "^1.1.2",
     "@types/node": "^12.7.12",
     "@types/react": "^16.9.6",
     "@types/react-dom": "^16.9.2",
     "css-loader": "6.8.1",
+    "html-inline-script-webpack-plugin": "^3.1.0",
     "html-webpack-plugin": "5.5.3",
     "style-loader": "3.3.3",
     "ts-loader": "9.5.0",
@@ -44,6 +44,7 @@
     "prettier": "^1.18.2",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
+    "string-replace-loader": "^3.1.0",
     "xmldom": "^0.1.27",
     "xpath": "0.0.27"
   }

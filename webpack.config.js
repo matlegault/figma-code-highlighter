@@ -16,7 +16,8 @@ module.exports = (env, argv) => ({
     rules: [
       { test: /\.tsx?$/, use: "ts-loader", exclude: /node_modules/ },
       { test: /\.css$/, use: ["style-loader", "css-loader"] },
-      { test: /\.(png|jpg|gif|webp|svg)$/, use: "url-loader" }
+      { test: /\.(png|jpg|gif|webp|svg)$/, use: "url-loader" },
+      { test: /\.js$/, loader: 'string-replace-loader', options: { search: /import\(/g, replace: '' } },
     ]
   },
 

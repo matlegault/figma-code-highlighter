@@ -1,7 +1,7 @@
 import hljs from 'highlight.js'
 import * as colorSchema from '../assets/colorSchema/index'
 import { SchemaAndLanguage } from '../models/SchemaAndLanguage'
-import liquid from '../assets/liquid.js'; // import liquid
+import liquid from '../assets/liquid.js'; // add liquid
 
 
 const xpath = require('xpath')

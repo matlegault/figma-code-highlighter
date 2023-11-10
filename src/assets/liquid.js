@@ -45,8 +45,8 @@ const BUILT_INS = [
     "item", "numbers", "i", "index", "value", "letters", "products"
   ];
 
-  // Liquid Filters
-  const FILTERS = [
+// Liquid Filters
+const FILTERS = [
     "abs", "append", "at_least", "at_most", "capitalize", "ceil", "compact", 
     "concat", "date", "default", "divided_by", "downcase", "escape", 
     "escape_once", "first", "floor", "join", "last", "lstrip", "map", 
@@ -55,16 +55,22 @@ const BUILT_INS = [
     "rstrip", "size", "slice", "sort", "sort_natural", "split", "strip", 
     "strip_html", "strip_newlines", "times", "truncate", "truncatewords", 
     "uniq", "upcase", "url_decode", "url_encode"
-  ];
+];
 
-    const OPERATORS = [
-        "==", "=", "\\:", "\\.", "\\|", "!=", "<>", ">", "<", ">=", "<=", "contains", "and", "or"
-    ];
+const OPERATORS = [
+    "==", "=", "\\:", "\\.", "\\|", "!=", "<>", ">", "<", ">=", "<=", "contains", "and", "or", "\\[", "\\]"
+];
 
 function liquid(hljs) {
     return {
       name: 'Liquid',
       contains: [
+        {
+            className: 'punctuation',
+            begin: /^[^{]+/,
+            end: /(?={|$)/,
+            relevance: 0
+        },
         hljs.COMMENT('{% comment %}', '{% endcomment %}'),
         hljs.COMMENT('{% raw %}', '{% endraw %}'),
         {
@@ -85,7 +91,7 @@ function liquid(hljs) {
             },
             {
               className: 'operator',
-              begin: '(\\b|\\s)(' + OPERATORS.join('|') + ')(\\b|\\s)',
+              begin: '(' + OPERATORS.join('|') + ')',
             },
             {
               className: 'liquidobject',
@@ -122,7 +128,7 @@ function liquid(hljs) {
             },
             {
                 className: 'operator',
-                begin: '(\\b|\\s)(' + OPERATORS.join('|') + ')(\\b|\\s)',
+                begin: '(' + OPERATORS.join('|') + ')',
             },
             {
               className: 'liquidobject',
